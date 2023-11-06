@@ -7,9 +7,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="styles.css">
-		<script type="module" src="pieces.js"></script>
-
-		
+		<!-- /!\ pas besoin d'utiliser le defer ici car avec le type "module", le defer est par défaut -->
+		<script type="module" src="pieces.js"></script> 
+	</head>
 	<body>
 		<header>
 			<img src="images/logo-les-bonnes-pieces.png" alt="LOGO">
@@ -17,8 +17,19 @@
 		</header>
 		<main>
 			<!-- Menu de recherche -->
+			<!-- Menu de recherche -->
 			<section class="filtres">
 				<h3>Filtres</h3>
+				<button class="btn-trier">Trier par prix croissant</button>
+				<br>
+				<br>
+				<button class="btn-filtrer">Filtrer les pièces non abordables</button>
+				<br>
+				<br>
+				<button class="btn-description">Filtrer les pièces avec description</button>
+				<br>
+				<br>
+				<button class="btn-prixDecroissant">Filtrer les prix décroissants</button>
 			</section>
 
 			<!-- Fiches produits -->
@@ -26,6 +37,5 @@
 			</section>
 		</main>
 		
-	</head>
 	</body>
 </html>
