@@ -53,13 +53,12 @@ button{
 	margin: 8px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 4px;
+	gap: 10px;
 }
 .fiches article {
-	border: 1px solid grey;
-	box-shadow: 3px 5px 3px grey ;
+	box-shadow: 0px 0px 4px gray;
 	border-radius: 5px;
-	padding: 4px;
+	padding: 15px;
 }
 .fiches article img {
 	display: block;
